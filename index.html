@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="th" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yin AI Automation - บริการพัฒนาระบบอัตโนมัติและระบบดิจิทัล</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="เปลี่ยนงานประจำที่ซ้ำซ้อนให้เป็นระบบอัตโนมัติ 24 ชั่วโมง ด้วย AI และ Automation เพิ่มประสิทธิภาพการทำงาน ลดต้นทุน และขยายยอดขายให้ธุรกิจของคุณ">
+  <meta name="keywords" content="AI Automation, n8n, Chatbot, LINE OA, CRM, Workflow, ระบบอัตโนมัติ, รับทำระบบ">
+  
+  <!-- Google Fonts: Outfit (English) & Prompt (Thai) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Print Cover Header (Visible only in Print Mode) -->
+  <div class="print-header">
+    <div class="print-brand">
+      <span class="logo-icon">🚀</span>
+      <div>
+        <div class="brand-name">Yin AI Automation</div>
+        <div class="brand-tagline">AI Automation & Digital Solutions</div>
+      </div>
+    </div>
+    <div class="print-meta">
+      <div>เอกสารเสนอราคา / โบรชัวร์บริการ</div>
+      <div id="print-date">วันที่ออก: 1 กรกฎาคม 2569</div>
+    </div>
+  </div>
+
+  <!-- Interactive Control Panel (Web only) -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-accent">🚀</span>
+        <span class="logo-text">Yin AI <span class="gradient-text">Automation</span></span>
+      </div>
+      <nav class="nav-menu">
+        <a href="#services">บริการของเรา</a>
+        <a href="#examples">ตัวอย่างระบบ</a>
+        <a href="#integrations">การเชื่อมต่อ</a>
+        <a href="#packages">แพ็กเกจ</a>
+        <a href="#calculator">คำนวณราคา</a>
+        <a href="#contact">ติดต่อเรา</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" title="เปลี่ยนธีม">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <button class="btn btn-primary btn-print" onclick="window.print()">
+          <i data-lucide="printer"></i>
+          <span>พิมพ์/เซฟ PDF</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="content-wrapper">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-background">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+      </div>
+      <div class="container hero-container">
+        <div class="badge-container">
+          <span class="hero-badge"><span class="pulse-dot"></span> AI & AUTOMATION SOLUTIONS</span>
+        </div>
+        <h1 class="hero-title">
+          เปลี่ยนธุรกิจของคุณให้ทำงานได้ <br>
+          <span class="gradient-text">ตลอด 24 ชั่วโมง</span> ด้วย AI และ Automation
+        </h1>
+        <p class="hero-subtitle">
+          พัฒนาระบบอัตโนมัติที่มีประสิทธิภาพสูง เพิ่มยอดขาย ลดเวลาทำงานซ้ำซ้อน 
+          ช่วยให้คุณโฟกัสกับสิ่งที่สำคัญที่สุดในธุรกิจ
+        </p>
+        <div class="hero-buttons no-print">
+          <a href="#calculator" class="btn btn-primary">
+            <i data-lucide="calculator"></i> คำนวณราคาเบื้องต้น
+          </a>
+          <a href="#services" class="btn btn-secondary">
+            ดูรายละเอียดบริการ
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stat Grid Summary (Web Only) -->
+    <section class="stats-section no-print">
+      <div class="container grid grid-3">
+        <div class="stat-card">
+          <div class="stat-icon"><i data-lucide="clock"></i></div>
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">ทำงานอัตโนมัติตลอดเวลา</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i data-lucide="trending-up"></i></div>
+          <div class="stat-num">+80%</div>
+          <div class="stat-label">เพิ่มประสิทธิภาพกระบวนการทำงาน</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i data-lucide="users"></i></div>
+          <div class="stat-num">-90%</div>
+          <div class="stat-label">ลดข้อผิดพลาดจากงาน Manual</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section page-break">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">SERVICES</span>
+          <h2 class="section-title">💼 แพ็กเกจบริการพัฒนาระบบ</h2>
+          <p class="section-desc">เลือกบริการที่ตรงกับความต้องการของธุรกิจคุณ เพื่อเพิ่มขีดความสามารถในการแข่งขัน</p>
+        </div>
+        
+        <div class="services-grid grid grid-3">
+          <!-- Service 1 -->
+          <div class="service-card">
+            <div class="service-icon icon-cyan"><i data-lucide="globe"></i></div>
+            <h3 class="service-name">🌐 Landing Page</h3>
+            <p class="service-details">เว็บไซต์สำหรับขายสินค้า (One Page Website) ออกแบบมาเพื่อปิดการขาย เก็บข้อมูลลูกค้า เชื่อมต่อ Facebook Pixel, Google Analytics และระบบหลังบ้านได้อย่างสมบูรณ์แบบ</p>
+            <div class="service-price">เริ่มต้น <span class="price-val">5,000</span> – <span class="price-val">10,000</span> บาท</div>
+          </div>
+          <!-- Service 2 -->
+          <div class="service-card">
+            <div class="service-icon icon-blue"><i data-lucide="message-square"></i></div>
+            <h3 class="service-name">💬 LINE OA System</h3>
+            <p class="service-details">ตั้งค่าระบบ LINE Official Account ระดับโปร ทำการออกแบบ Rich Menu, ระบบตอบกลับอัตโนมัติ (Auto Reply), ตั้งค่าการ Broadcast แบบระบุกลุ่มเป้าหมาย และระบบเก็บข้อมูลลูกค้า</p>
+            <div class="service-price">เริ่มต้น <span class="price-val">10,000</span> – <span class="price-val">20,000</span> บาท</div>
+          </div>
+          <!-- Service 3 -->
+          <div class="service-card">
+            <div class="service-icon icon-purple"><i data-lucide="cpu"></i></div>
+            <h3 class="service-name">⚙️ n8n Automation</h3>
+            <p class="service-details">เชื่อมต่อการทำงานของแอปพลิเคชันต่างๆ เช่น Google Sheets, Gmail, LINE OA, Telegram, Slack และเชื่อมต่อผ่าน REST API เพื่อจัดการเวิร์กโฟลว์ข้อมูลแบบไร้รอยต่อ</p>
+            <div class="service-price">เริ่มต้น <span class="price-val">15,000</span> – <span class="price-val">30,000</span> บาท</div>
+          </div>
+          <!-- Service 4 -->
+          <div class="service-card">
+            <div class="service-icon icon-pink"><i data-lucide="bot"></i></div>
+            <h3 class="service-name">🤖 AI Chatbot</h3>
+            <p class="service-details">พัฒนา AI Chatbot สุดอัจฉริยะเพื่อตอบคำถามลูกค้า 24 ชั่วโมง โดยเชื่อมต่อฐานข้อมูลธุรกิจของคุณ (Knowledge Base) เรียนรู้ข้อมูลเฉพาะทางขององค์กรได้อย่างแม่นยำ</p>
+            <div class="service-price">เริ่มต้น <span class="price-val">20,000</span> – <span class="price-val">50,000</span> บาท</div>
+          </div>
+          <!-- Service 5 -->
+          <div class="service-card">
+            <div class="service-icon icon-orange"><i data-lucide="bar-chart-3"></i></div>
+            <h3 class="service-name">📊 CRM + Dashboard</h3>
+            <p class="service-details">ระบบจัดการความสัมพันธ์ลูกค้า (CRM) รวบรวมข้อมูลลูกค้าทุกช่องทางมาไว้ที่เดียว พร้อมระบบสรุปข้อมูลสถิติยอดขายและ Dashboard วิเคราะห์แบบเรียลไทม์</p>
+            <div class="service-price">เริ่มต้น <span class="price-val">30,000</span> – <span class="price-val">80,000</span> บาท</div>
+          </div>
+          <!-- Service 6 -->
+          <div class="service-card">
+            <div class="service-icon icon-green"><i data-lucide="git-branch"></i></div>
+            <h3 class="service-name">🏢 Business Automation</h3>
+            <p class="service-details">วิเคราะห์และออกแบบเวิร์กโฟลว์ของทั้งองค์กร เปลี่ยนงานแบบเดิมๆ (Manual) ให้ทำงานโดยอัตโนมัติ ช่วยลดจำนวนพนักงานและเวลาในการทำงานซ้ำซ้อนอย่างยั่งยืน</p>
+            <div class="service-price">เริ่มต้น <span class="price-val">50,000</span> – <span class="price-val">150,000+</span> บาท</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section id="examples" class="examples-section page-break">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">USE CASES</span>
+          <h2 class="section-title">⚙️ ตัวอย่างระบบที่รับพัฒนา</h2>
+          <p class="section-desc">ตัวอย่างการใช้งานจริงเพื่อแก้ไขปัญหาทางธุรกิจยอดนิยมที่พร้อมใช้งาน</p>
+        </div>
+
+        <div class="table-container">
+          <table class="proposal-table">
+            <thead>
+              <tr>
+                <th>ระบบที่รับพัฒนา</th>
+                <th>รายละเอียดการทำงาน</th>
+                <th class="text-right">งบประมาณเริ่มต้น</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>📩 แจ้งเตือนลูกหนี้ผ่าน LINE</strong></td>
+                <td>ดึงข้อมูลลูกหนี้ กำหนดชำระเงินจาก Google Sheets และส่งแจ้งเตือนวันครบกำหนดชำระผ่าน LINE ส่วนตัว/กลุ่ม อัตโนมัติ</td>
+                <td class="text-right price-highlight">10,000 – 20,000 บาท</td>
+              </tr>
+              <tr>
+                <td><strong>📝 Google Forms → Google Sheets</strong></td>
+                <td>บันทึกข้อมูลจากการกรอกฟอร์มเข้าสู่ตารางทำงานอัตโนมัติ พร้อมส่งแจ้งเตือนทาง LINE/Email หาผู้ดูแลระบบทันที</td>
+                <td class="text-right price-highlight">5,000 – 15,000 บาท</td>
+              </tr>
+              <tr>
+                <td><strong>📧 Email Automation</strong></td>
+                <td>ระบบส่งอีเมลต้อนรับเมื่อลูกค้าลงทะเบียน ส่งคู่มือการใช้งาน หรือส่งเมลติดตามผลแบบอัตโนมัติตามช่วงเวลาที่กำหนด</td>
+                <td class="text-right price-highlight">5,000 – 10,000 บาท</td>
+              </tr>
+              <tr>
+                <td><strong>📲 Facebook Lead → LINE → Google Sheets</strong></td>
+                <td>ดึงข้อมูลลูกค้าใหม่ (Leads) จากโฆษณา Facebook ส่งแจ้งเตือนพนักงานขายทาง LINE และบันทึกข้อมูลเข้า Google Sheets แบบเรียลไทม์</td>
+                <td class="text-right price-highlight">15,000 – 30,000 บาท</td>
+              </tr>
+              <tr>
+                <td><strong>📄 ระบบออกใบเสนอราคาอัตโนมัติ</strong></td>
+                <td>สร้างเอกสาร PDF (เช่น ใบเสนอราคา ใบแจ้งหนี้ ใบเสร็จ) จากข้อมูลระบบ และจัดส่งให้ลูกค้าผ่าน Email หรือ LINE ทันที</td>
+                <td class="text-right price-highlight">15,000 – 30,000 บาท</td>
+              </tr>
+              <tr>
+                <td><strong>📊 แจ้งเตือนยอดขายทุกเช้า</strong></td>
+                <td>สรุปผลยอดขายรวม ยอดขายรายสินค้า ประจำวัน ส่งรายงานผ่าน LINE หรือ Email ให้ผู้บริหารทุกเช้าโดยไม่ต้องทำมือ</td>
+                <td class="text-right price-highlight">10,000 – 20,000 บาท</td>
+              </tr>
+              <tr>
+                <td><strong>🤖 AI Chatbot ตอบคำถาม 24 ชั่วโมง</strong></td>
+                <td>บอทอัจฉริยะคอยโต้ตอบและตอบข้อซักถามทั่วไป คัดกรองและบันทึกข้อมูลผู้ติดต่อก่อนส่งต่อให้พนักงานดูแล</td>
+                <td class="text-right price-highlight">20,000 – 40,000 บาท</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integrations Section -->
+    <section id="integrations" class="integrations-section page-break">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">INTEGRATIONS</span>
+          <h2 class="section-title">🔗 ระบบที่สามารถเชื่อมต่อได้ (Integrations)</h2>
+          <p class="section-desc">เชื่อมโยงเครื่องมือที่คุณใช้อยู่เป็นประจำเข้าด้วยกันอย่างไร้รอยต่อ</p>
+        </div>
+
+        <div class="integrations-grid">
+          <div class="integration-item" data-tooltip="LINE Official Account">
+            <span class="int-icon"><i data-lucide="message-square"></i></span>
+            <span class="int-name">LINE OA</span>
+          </div>
+          <div class="integration-item" data-tooltip="Facebook Lead Ads">
+            <span class="int-icon"><i data-lucide="facebook"></i></span>
+            <span class="int-name">Facebook Leads</span>
+          </div>
+          <div class="integration-item" data-tooltip="Google Sheets">
+            <span class="int-icon"><i data-lucide="table"></i></span>
+            <span class="int-name">Google Sheets</span>
+          </div>
+          <div class="integration-item" data-tooltip="Google Forms">
+            <span class="int-icon"><i data-lucide="form-input"></i></span>
+            <span class="int-name">Google Forms</span>
+          </div>
+          <div class="integration-item" data-tooltip="Gmail">
+            <span class="int-icon"><i data-lucide="mail"></i></span>
+            <span class="int-name">Gmail</span>
+          </div>
+          <div class="integration-item" data-tooltip="Google Calendar">
+            <span class="int-icon"><i data-lucide="calendar"></i></span>
+            <span class="int-name">Google Calendar</span>
+          </div>
+          <div class="integration-item" data-tooltip="Telegram">
+            <span class="int-icon"><i data-lucide="send"></i></span>
+            <span class="int-name">Telegram</span>
+          </div>
+          <div class="integration-item" data-tooltip="Slack">
+            <span class="int-icon"><i data-lucide="slack"></i></span>
+            <span class="int-name">Slack</span>
+          </div>
+          <div class="integration-item" data-tooltip="Discord">
+            <span class="int-icon"><i data-lucide="message-circle"></i></span>
+            <span class="int-name">Discord</span>
+          </div>
+          <div class="integration-item" data-tooltip="MySQL / PostgreSQL">
+            <span class="int-icon"><i data-lucide="database"></i></span>
+            <span class="int-name">SQL Databases</span>
+          </div>
+          <div class="integration-item" data-tooltip="Airtable">
+            <span class="int-icon"><i data-lucide="columns"></i></span>
+            <span class="int-name">Airtable</span>
+          </div>
+          <div class="integration-item" data-tooltip="Notion">
+            <span class="int-icon"><i data-lucide="book-open"></i></span>
+            <span class="int-name">Notion</span>
+          </div>
+          <div class="integration-item" data-tooltip="WooCommerce">
+            <span class="int-icon"><i data-lucide="shopping-cart"></i></span>
+            <span class="int-name">WooCommerce</span>
+          </div>
+          <div class="integration-item" data-tooltip="Shopify">
+            <span class="int-icon"><i data-lucide="shopping-bag"></i></span>
+            <span class="int-name">Shopify</span>
+          </div>
+          <div class="integration-item" data-tooltip="WordPress">
+            <span class="int-icon"><i data-lucide="layout"></i></span>
+            <span class="int-name">WordPress</span>
+          </div>
+          <div class="integration-item" data-tooltip="REST API">
+            <span class="int-icon"><i data-lucide="code-2"></i></span>
+            <span class="int-name">REST API</span>
+          </div>
+          <div class="integration-item" data-tooltip="OpenAI / AI API">
+            <span class="int-icon"><i data-lucide="binary"></i></span>
+            <span class="int-name">OpenAI / AI API</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages-section page-break">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PACKAGES</span>
+          <h2 class="section-title">📦 แพ็กเกจแนะนำที่เหมาะสมกับคุณ</h2>
+          <p class="section-desc">เลือกแพ็กเกจที่เหมาะสมกับสเกลและขั้นตอนการทำงานขององค์กรของคุณ</p>
+        </div>
+
+        <div class="packages-grid grid grid-3">
+          <!-- Starter Package -->
+          <div class="package-card border-starter">
+            <div class="package-badge badge-starter">Starter</div>
+            <h3 class="package-title">🟢 Starter</h3>
+            <p class="package-subtitle">เหมาะสำหรับธุรกิจเริ่มต้น</p>
+            <div class="package-price">5,000 – 15,000 <span>บาท</span></div>
+            <hr class="card-divider">
+            <ul class="package-features">
+              <li><i data-lucide="check" class="text-starter"></i> ระบบอัตโนมัติ 1 Workflow</li>
+              <li><i data-lucide="check" class="text-starter"></i> เชื่อมต่อ 2 – 3 ระบบ</li>
+              <li><i data-lucide="check" class="text-starter"></i> ส่งมอบพร้อมสอนใช้งาน</li>
+              <li class="disabled"><i data-lucide="x"></i> ออกแบบ AI Chatbot</li>
+              <li class="disabled"><i data-lucide="x"></i> รายงานสถิติและ Dashboard</li>
+            </ul>
+          </div>
+
+          <!-- Business Package -->
+          <div class="package-card border-business featured">
+            <div class="popular-ribbon">แนะนำ</div>
+            <div class="package-badge badge-business">Business</div>
+            <h3 class="package-title">🔵 Business</h3>
+            <p class="package-subtitle">เหมาะสำหรับธุรกิจ SME</p>
+            <div class="package-price">15,000 – 50,000 <span>บาท</span></div>
+            <hr class="card-divider">
+            <ul class="package-features">
+              <li><i data-lucide="check" class="text-business"></i> เชื่อมต่อหลายระบบพร้อมกัน</li>
+              <li><i data-lucide="check" class="text-business"></i> ออกแบบระบบ LINE OA / Gmail</li>
+              <li><i data-lucide="check" class="text-business"></i> บันทึกข้อมูล Google Sheets</li>
+              <li><i data-lucide="check" class="text-business"></i> Dashboard สรุปผลยอดขาย</li>
+              <li><i data-lucide="check" class="text-business"></i> Automation หลาย Workflow</li>
+            </ul>
+          </div>
+
+          <!-- Enterprise Package -->
+          <div class="package-card border-enterprise">
+            <div class="package-badge badge-enterprise">Enterprise</div>
+            <h3 class="package-title">🟣 Enterprise</h3>
+            <p class="package-subtitle">เหมาะสำหรับบริษัท / องค์กรขนาดใหญ่</p>
+            <div class="package-price">50,000 – 150,000+ <span>บาท</span></div>
+            <hr class="card-divider">
+            <ul class="package-features">
+              <li><i data-lucide="check" class="text-enterprise"></i> วิเคราะห์กระบวนการทำงานทั้งระบบ</li>
+              <li><i data-lucide="check" class="text-enterprise"></i> พัฒนา AI Chatbot เฉพาะทาง</li>
+              <li><i data-lucide="check" class="text-enterprise"></i> ระบบจัดการลูกค้าสัมพันธ์ (CRM)</li>
+              <li><i data-lucide="check" class="text-enterprise"></i> Dashboard แสดงรายงานข้อมูลเจาะลึก</li>
+              <li><i data-lucide="check" class="text-enterprise"></i> รองรับเชื่อมต่อ API ภายนอกอื่นๆ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Calculator Section (Web Only) -->
+    <section id="calculator" class="calculator-section no-print">
+      <div class="container">
+        <div class="calculator-box">
+          <div class="calc-header">
+            <h3>🧮 เครื่องมือคำนวณราคาประเมินเบื้องต้น</h3>
+            <p>เลือกบริการที่คุณสนใจเพื่อคำนวณราคาเฉลี่ยรวมโดยประมาณ</p>
+          </div>
+          
+          <div class="calc-body">
+            <div class="calc-options">
+              <label class="calc-option">
+                <input type="checkbox" name="calc-service" value="7500" data-name="Landing Page">
+                <span class="custom-checkbox"></span>
+                <span class="option-info">
+                  <span class="option-title">🌐 Landing Page</span>
+                  <span class="option-desc">เว็บไซต์ปิดการขาย / เก็บข้อมูลลูกค้า</span>
+                </span>
+                <span class="option-price">~ 7,500 บ.</span>
+              </label>
+
+              <label class="calc-option">
+                <input type="checkbox" name="calc-service" value="15000" data-name="LINE OA System">
+                <span class="custom-checkbox"></span>
+                <span class="option-info">
+                  <span class="option-title">💬 LINE OA System</span>
+                  <span class="option-desc">ตั้งค่าเมนู, บรอดแคสต์, แชทอัตโนมัติ</span>
+                </span>
+                <span class="option-price">~ 15,000 บ.</span>
+              </label>
+
+              <label class="calc-option">
+                <input type="checkbox" name="calc-service" value="22500" data-name="n8n Automation">
+                <span class="custom-checkbox"></span>
+                <span class="option-info">
+                  <span class="option-title">⚙️ n8n Automation</span>
+                  <span class="option-desc">เชื่อมระบบและย้ายเวิร์กโฟลว์ข้อมูล</span>
+                </span>
+                <span class="option-price">~ 22,500 บ.</span>
+              </label>
+
+              <label class="calc-option">
+                <input type="checkbox" name="calc-service" value="35000" data-name="AI Chatbot">
+                <span class="custom-checkbox"></span>
+                <span class="option-info">
+                  <span class="option-title">🤖 AI Chatbot</span>
+                  <span class="option-desc">บอทอัจฉริยะเรียนรู้ฐานข้อมูลแบรนด์</span>
+                </span>
+                <span class="option-price">~ 35,000 บ.</span>
+              </label>
+
+              <label class="calc-option">
+                <input type="checkbox" name="calc-service" value="55000" data-name="CRM + Dashboard">
+                <span class="custom-checkbox"></span>
+                <span class="option-info">
+                  <span class="option-title">📊 CRM + Dashboard</span>
+                  <span class="option-desc">ระบบจัดการความสัมพันธ์ลูกค้าและสถิติ</span>
+                </span>
+                <span class="option-price">~ 55,000 บ.</span>
+              </label>
+
+              <label class="calc-option">
+                <input type="checkbox" name="calc-service" value="100000" data-name="Business Automation">
+                <span class="custom-checkbox"></span>
+                <span class="option-info">
+                  <span class="option-title">🏢 Business Automation</span>
+                  <span class="option-desc">ระบบอัตโนมัติทั้งบริษัทและโครงสร้างเวิร์กโฟลว์</span>
+                </span>
+                <span class="option-price">~ 100,000 บ.</span>
+              </label>
+            </div>
+            
+            <div class="calc-result">
+              <div class="result-title">สรุปความต้องการเบื้องต้นของคุณ</div>
+              <ul id="selected-list" class="selected-services-list">
+                <li class="empty-list">ยังไม่ได้เลือกรายการบริการ</li>
+              </ul>
+              <hr class="result-divider">
+              <div class="price-summary">
+                <div class="price-label">ราคาประเมินโดยประมาณ:</div>
+                <div class="price-total"><span id="total-price">0</span> <span class="currency">บาท</span></div>
+              </div>
+              <p class="price-disclaimer">*นี่เป็นเพียงการคำนวณเบื้องต้นเพื่อประเมินงบประมาณ ราคาจริงขึ้นอยู่กับความซับซ้อนของโครงสร้างเวิร์กโฟลว์</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deliverables & Benefits Section -->
+    <section class="deliverables-section page-break">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">BENEFITS</span>
+          <h2 class="section-title">🎁 สิ่งที่ลูกค้าจะได้รับจากเรา</h2>
+          <p class="section-desc">เราใส่ใจในทุกรายละเอียด ตั้งแต่การวิเคราะห์จนถึงบริการหลังการขายเพื่อความพึงพอใจสูงสุด</p>
+        </div>
+
+        <div class="deliverables-grid grid grid-4">
+          <div class="benefit-card">
+            <div class="benefit-icon"><i data-lucide="search"></i></div>
+            <h4>วิเคราะห์ความต้องการ</h4>
+            <p>วิเคราะห์ความต้องการเชิงลึกอย่างละเอียดร่วมกันก่อนเริ่มพัฒนาโครงการจริง</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon"><i data-lucide="drafting-compass"></i></div>
+            <h4>ออกแบบ Workflow</h4>
+            <p>วางโครงสร้างขั้นตอนการทำงานที่เหมาะสมกับปัญหาและขนาดธุรกิจคุณที่สุด</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon"><i data-lucide="plug"></i></div>
+            <h4>ติดตั้งและเชื่อมต่อ</h4>
+            <p>เชื่อมโยง APIs ฐานข้อมูล และระบบต่างๆ ให้ติดต่อสื่อสารกันได้อย่างแม่นยำ</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon"><i data-lucide="check-circle2"></i></div>
+            <h4>ทดสอบระบบ</h4>
+            <p>ทำการตรวจสอบเวิร์กโฟลว์และการส่งข้อมูลทุกจุดเพื่อรับประกันความถูกต้อง</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon"><i data-lucide="book-open"></i></div>
+            <h4>สอนการใช้งาน</h4>
+            <p>มีช่วงอบรมการใช้งานให้กับทีมของคุณ เพื่อให้เข้าใจระบบอย่างถ่องแท้</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon"><i data-lucide="file-text"></i></div>
+            <h4>เอกสารประกอบ</h4>
+            <p>จัดทำคู่มือการใช้งานและโครงสร้างแผนผัง (Workflow Document) อย่างชัดเจน</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon"><i data-lucide="shield-check"></i></div>
+            <h4>รับประกันหลังงาน</h4>
+            <p>รับดูแลระบบ แก้ไขบั๊กและปัญหาที่เกิดจากเทคนิคตามขอบเขตงานที่ตกลงกัน</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon"><i data-lucide="award"></i></div>
+            <h4>ความใส่ใจสูงสุด</h4>
+            <p>เน้นพัฒนาฟีเจอร์ที่สร้างความคุ้มค่าและคืนทุนให้กับธุรกิจคุณอย่างชัดเจน</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack & Work Process Section -->
+    <section class="tech-process-section page-break">
+      <div class="container grid grid-2 gap-4">
+        <!-- Tech Stack -->
+        <div class="tech-box">
+          <h3 class="section-title-sm"><i data-lucide="wrench"></i> 🛠️ เทคโนโลยีและเครื่องมือที่เราใช้</h3>
+          <p class="subtitle-sm">เราเลือกสรรเทคโนโลยีระดับสากลที่เป็นที่ยอมรับ เพื่อความรวดเร็วและปลอดภัยของระบบ</p>
+          
+          <div class="tech-tags">
+            <span class="tech-tag">n8n</span>
+            <span class="tech-tag">Generative AI</span>
+            <span class="tech-tag">LINE Messaging API</span>
+            <span class="tech-tag">Google Workspace</span>
+            <span class="tech-tag">Google Sheets</span>
+            <span class="tech-tag">Google Apps Script</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">Webhook</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML / CSS</span>
+            <span class="tech-tag">Cloudflare</span>
+            <span class="tech-tag">GitHub</span>
+            <span class="tech-tag">WordPress</span>
+          </div>
+        </div>
+
+        <!-- Work Process Flow -->
+        <div class="process-box">
+          <h3 class="section-title-sm"><i data-lucide="milestone"></i> 📈 ขั้นตอนการทำงานที่เป็นระบบ</h3>
+          <p class="subtitle-sm">เราแบ่งระยะการพัฒนาเป็น 8 ขั้นตอนเพื่อให้งานราบรื่นและควบคุมเวลาได้ดี</p>
+          
+          <div class="process-timeline">
+            <div class="timeline-item">
+              <span class="timeline-num">1</span>
+              <div>
+                <strong>พูดคุยความต้องการของลูกค้า</strong>
+                <p>เข้าใจข้อจำกัด ปัญหา และเป้าหมายปลายทาง</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-num">2</span>
+              <div>
+                <strong>วิเคราะห์และออกแบบระบบ</strong>
+                <p>เขียน Diagram และ Workflow จำลองให้ลูกค้าเห็นภาพ</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-num">3</span>
+              <div>
+                <strong>เสนอราคาและกำหนดระยะเวลา</strong>
+                <p>ตกลงราคาตามฟีเจอร์และระบุกำหนดส่งมอบชัดเจน</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-num">4</span>
+              <div>
+                <strong>พัฒนาระบบ</strong>
+                <p>เริ่มต้นสร้างเวิร์กโฟลว์ตามแผนและทำการทดสอบทีละจุด</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-num">5</span>
+              <div>
+                <strong>ทดสอบและปรับปรุง</strong>
+                <p>ทำการตรวจสอบระบบภาพรวม (UAT) ร่วมกับลูกค้า</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-num">6</span>
+              <div>
+                <strong>ส่งมอบงาน</strong>
+                <p>ย้ายระบบขึ้นคลาวด์และเปิดระบบให้ทำงานจริงอย่างเต็มรูปแบบ</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-num">7</span>
+              <div>
+                <strong>สอนการใช้งาน</strong>
+                <p>ให้ความรู้กับเจ้าหน้าที่ผู้ใช้งานผ่านวิดีโอคอลหรือไฟล์อธิบาย</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-num">8</span>
+              <div>
+                <strong>ดูแลหลังการส่งมอบ</strong>
+                <p>ให้คำปรึกษา ตรวจสอบระบบ เพื่อการขับเคลื่อนที่ต่อเนื่อง</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customizer Panel (Web only, Floating or at the bottom before contact) -->
+    <section class="customizer-section no-print">
+      <div class="container">
+        <div class="customizer-box">
+          <div class="customizer-header">
+            <h3>⚙️ ปรับแต่งข้อมูลติดต่อสำหรับพิมพ์ PDF</h3>
+            <p>กรอกข้อมูลติดต่อของคุณที่นี่ ข้อมูลด้านล่างจะอัปเดตแบบเรียลไทม์ และนำไปใช้เมื่อพิมพ์/บันทึก PDF ทันที</p>
+          </div>
+          <div class="customizer-grid grid grid-3">
+            <div class="form-group">
+              <label for="input-tel">📞 เบอร์โทรศัพท์</label>
+              <input type="text" id="input-tel" placeholder="ระบุเบอร์โทรศัพท์..." value="098-765-4321">
+            </div>
+            <div class="form-group">
+              <label for="input-line">💬 LINE ID</label>
+              <input type="text" id="input-line" placeholder="ระบุ LINE ID..." value="@yin.ai.auto">
+            </div>
+            <div class="form-group">
+              <label for="input-email">📧 อีเมล</label>
+              <input type="text" id="input-email" placeholder="ระบุอีเมล..." value="contact@yin-ai.com">
+            </div>
+            <div class="form-group">
+              <label for="input-web">🌐 เว็บไซต์</label>
+              <input type="text" id="input-web" placeholder="ระบุเว็บไซต์..." value="www.yin-ai.com">
+            </div>
+            <div class="form-group">
+              <label for="input-fb">📘 Facebook</label>
+              <input type="text" id="input-fb" placeholder="ระบุหน้า Facebook Page..." value="Yin AI Automation">
+            </div>
+            <div class="form-group flex-end">
+              <button class="btn btn-primary w-full" onclick="window.print()">
+                <i data-lucide="file-down"></i> พิมพ์เอกสารเสนอราคา PDF
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Brand Section -->
+    <section id="contact" class="contact-section page-break">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-content-grid grid grid-2">
+            <!-- Left Info -->
+            <div class="contact-left">
+              <span class="contact-badge">CONTACT US</span>
+              <h2 class="contact-title">📞 ข้อมูลการติดต่อผู้พัฒนา</h2>
+              <p class="contact-subtitle">สนใจพัฒนาระบบ ติดต่อเพื่อพูดคุยวิเคราะห์ปัญหาและออกแบบระบบเบื้องต้นได้ฟรี</p>
+              
+              <div class="brand-details">
+                <h3 class="brand-title">Yin AI Automation</h3>
+                <p class="brand-desc">"เปลี่ยนงานที่ต้องทำซ้ำทุกวัน ให้เป็นระบบอัตโนมัติด้วย AI และ Automation"</p>
+              </div>
+            </div>
+
+            <!-- Right details -->
+            <div class="contact-right">
+              <ul class="contact-info-list">
+                <li>
+                  <span class="c-icon"><i data-lucide="phone"></i></span>
+                  <div>
+                    <span class="c-label">เบอร์โทรศัพท์</span>
+                    <span class="c-val" id="text-tel">098-765-4321</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="c-icon"><i data-lucide="message-square"></i></span>
+                  <div>
+                    <span class="c-label">LINE Official Account</span>
+                    <span class="c-val" id="text-line">@yin.ai.auto</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="c-icon"><i data-lucide="mail"></i></span>
+                  <div>
+                    <span class="c-label">อีเมล</span>
+                    <span class="c-val" id="text-email">contact@yin-ai.com</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="c-icon"><i data-lucide="globe"></i></span>
+                  <div>
+                    <span class="c-label">เว็บไซต์</span>
+                    <span class="c-val" id="text-web">www.yin-ai.com</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="c-icon"><i data-lucide="facebook"></i></span>
+                  <div>
+                    <span class="c-label">Facebook Page</span>
+                    <span class="c-val" id="text-fb">Yin AI Automation</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <div class="footer-slogan">
+        <p><strong>ลดต้นทุน • เพิ่มประสิทธิภาพ • ทำงานได้ตลอด 24 ชั่วโมง</strong></p>
+        <p class="sub-slogan">เปลี่ยนงานที่ต้องทำซ้ำทุกวัน ให้เป็นระบบอัตโนมัติด้วย AI และ Automation</p>
+      </div>
+      <div class="footer-copyright">
+        © 2026 Yin AI Automation. All rights reserved. เอกสารนี้จัดทำเพื่อโปรโมทบริการพัฒนาระบบ
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Print Button (Web Only) -->
+  <button id="floating-print-btn" class="floating-btn no-print" onclick="window.print()" title="พิมพ์ / ดาวน์โหลด PDF">
+    <i data-lucide="printer"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
